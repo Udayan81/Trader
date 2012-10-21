@@ -1,6 +1,7 @@
 #trader code - defining the profile of the player
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'portfolio'
+require 'stock'
 
 class Trader
 
@@ -15,9 +16,8 @@ class Trader
 	end	
 
 	def value
-		trader_value = @portfolio.value.to_f + @cash_balance.to_f
-		#why does this not add up the numbers???
-		puts trader_value.to_f
+		trader_value = (@portfolio.value.to_i + @cash_balance.to_i)
+		trader_value.to_i
 	end	
 end
 

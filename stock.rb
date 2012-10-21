@@ -19,7 +19,7 @@ class Stock
 	end	
 
 	def neg_price_movement
-		price_lo = ( 1 - @vol ) * @price
+		price_lo = @price * ( 1 - @vol )
 		@price = rand (price_lo..@price)
 	end
 
@@ -30,6 +30,10 @@ class Stock
 	def display_name
 		puts @stock_name
 	end
+
+	def price
+		@price
+	end	
 end
 
 #test
