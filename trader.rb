@@ -21,14 +21,3 @@ class Trader
 	end	
 end
 
-#test
-#udayan = Trader.new("Ud", 10000000)
-#stock_a = Stock.new("StockA", 500, 0.25)
-#stock_b = Stock.new("StockB", 75, 1.1)
-
-#udayan.portfolio.buy_stock(stock_a,100)
-#udayan.portfolio.buy_stock(stock_b,50)
-#udayan.portfolio.display
-#udayan.portfolio.value
-#udayan.value
-

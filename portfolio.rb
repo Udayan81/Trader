@@ -14,13 +14,13 @@ class Portfolio
 
 	#buy stock into portfolio method
 	def buy_stock (stock, amount)
-		new_amount = @portfolio[stock].to_f + amount
+		new_amount = @portfolio[stock].to_f + amount.to_f
 		@portfolio[stock] = new_amount
 	end	
 
 	#sell stock method. Does not allow holdings of stock to be < 0 
 	def sell_stock (stock, amount)
-		new_amount = @portfolio[stock].to_f - amount
+		new_amount = @portfolio[stock].to_f - amount.to_f
 		if new_amount < 0 
 			puts "Trade invalid. You cannot go short stock. Your holdings must be positive."
 			@short_stock = true
@@ -66,20 +66,6 @@ class Portfolio
 
 end
 
-#tests
-#stock_a = Stock.new("StockA", 500, 0.25)
-#stock_b = Stock.new("StockB", 75, 1.1)
-
-#my_portfolio = Portfolio.new
-#my_portfolio.buy_stock(stock_a, 10)
-#my_portfolio.buy_stock(stock_b, 100)
-#my_portfolio.display
-#puts my_portfolio.value
-
-#my_portfolio.buy_stock(stock_a, 20)
-#my_portfolio.sell_stock(stock_b, 113)
-#my_portfolio.display
-#my_portfolio.value
 
 
 

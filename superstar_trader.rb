@@ -3,7 +3,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'market'
-require 'trader'
 
 puts "Welcome to SUPERSTAR TRADER\n"
 puts "The aim of the game is to spend your 1,000,000 wisely on stocks. Beware, some are riskier than others!"
